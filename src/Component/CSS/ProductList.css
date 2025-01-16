@@ -1,0 +1,28 @@
+.Card{
+  display:  flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.title{
+  text-align: center;
+  margin:  65px;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+@media (max-width:468px){
+  .title{
+    text-align: center;
+    font-size: 30px;
+  }
+  .Card{
+    display:  flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: start;
+    align-items: start;
+  }
+ .mainsec{
+  overflow-x: hidden;
+  margin: 0px;
+ }
+}

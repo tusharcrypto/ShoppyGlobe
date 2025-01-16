@@ -1,0 +1,38 @@
+/* NotFound.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lottie {
+  width: 70%;
+  max-width: 400px;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lottie {
+    width: 90%;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}

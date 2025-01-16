@@ -1,0 +1,105 @@
+.banner {
+  width: 100%;
+  display: flex;
+  gap: 150px;
+  margin: 50px  40px;
+  padding: 10px;
+  /* background-color: antiquewhite; */
+}
+
+.banner p {
+  margin-left: 80px;
+  margin-top: 100px;
+  width: 500px;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    margin: 50px 80px;
+    gap: 45px;
+  }
+  .banner .Lottie {
+    width: 300px;
+  }
+  .banner p {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 500px;
+    text-align: left;
+    overflow-wrap: break-word;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 912px) {
+  .banner {
+    margin: 40px 80px;
+    gap: 55px;
+  }
+  .banner .Lottie {
+    width: 250px;
+  }
+  .banner p {
+    width: 500px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 853px) {
+  .banner {
+    margin: 50px 40px;
+    gap: 25px;
+  }
+  .banner .Lottie {
+    width: 300px;
+  }
+  .banner p {
+    margin-left: 0;
+    width: 350px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    gap: 30px;
+  }
+  .banner .Lottie {
+    width: 250px;
+  }
+  .banner p {
+    width: 350px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 468px) {
+  .banner {
+    flex-direction: column;
+    margin: 50px 40px;
+  }
+  .banner .Lottie {
+    width: 250px;
+  }
+  .banner p {
+    margin-left: 0;
+    width: 300px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .banner {
+    flex-direction: column;
+    margin: 40px 20px;
+    gap: 25px;
+  }
+  .banner .Lottie {
+    width: 250px;
+  }
+  .banner p {
+    width: 280px;
+  }
+}

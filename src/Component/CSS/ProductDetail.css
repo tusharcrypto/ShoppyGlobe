@@ -1,0 +1,185 @@
+
+.productDetail {
+  display: flex;
+  background-color: #f7f7f6; 
+  margin: 25px 150px; 
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+}
+
+.productDetail:hover {
+  transform: scale(1.02); /* Subtle zoom-in on hover for depth */
+}
+
+.left-side1 {
+  flex: 1;
+  padding-right: 30px; /* Adjusted spacing for a more balanced look */
+}
+
+.left-side1 img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); Shadow effect on image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left-side1 img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.right-side1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  position: relative;
+  top: 10%;
+}
+
+.bag {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bag:hover {
+  transform: scale(1.15);
+}
+
+.rating {
+  color: #fca400; /* Gold color for stars */
+  font-size: 1.7em; /* Larger size for better visibility */
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #2b0865; /* Deep purple */
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #e93e39; /* Eye-catching red color for price */
+  margin: 10px 0;
+}
+
+.shipping {
+  font-size: 1.2em;
+  color: #6c757d;
+  margin: 10px 0;
+}
+
+.details-btn {
+  background-color: #2b0865;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.details-btn:hover {
+  background-color: #e93e39; /* Hover effect changes button color */
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .productDetail {
+    flex-direction: column;
+    margin: 0 40px;
+    padding: 30px 20px;
+  }
+
+  .left-side1 img {
+    max-width: 300px;
+  }
+
+  .right-side1 {
+    top: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bag {
+    width: 50px;
+    height: 50px;
+  }
+
+  .details-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .productDetail {
+    margin: 0 20px;
+    padding: 25px 15px;
+  }
+
+  .left-side1 img {
+    width: 100%;
+  }
+
+  .right-side1 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating {
+    font-size: 1.6em;
+  }
+
+  .bag {
+    width: 40px;
+    height: 40px;
+  }
+
+  .details-btn {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 468px) {
+  .productDetail {
+    margin: 0 10px;
+    padding: 15px;
+  }
+
+  .left-side1 img {
+    width: 100%;
+  }
+
+  .right-side1 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bag {
+    width: 35px;
+    height: 35px;
+  }
+
+  .details-btn {
+    padding: 12px 0;
+    font-size: 1.1em;
+  }
+}

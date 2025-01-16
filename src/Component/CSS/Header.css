@@ -1,0 +1,107 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 237, 255);
+  padding: 10px;
+}
+
+.Navbar p {
+  font-size: 25px;
+  margin-left: 25px;
+  font-family: sans-serif;
+}
+
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+  font-family: sans-serif;
+  position: relative;
+  left: 30%;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navbar ul.menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 74%;
+  width: 20%;
+  background-color: aliceblue;
+  padding: 10px;
+  gap: 25px;
+}
+
+.bar {
+  display: none;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+}
+
+/* Cart Count Badge */
+.cart-link {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ff5733;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Navbar ul {
+    display: none;
+  }
+
+  .Navbar ul.menu.active {
+    display: flex;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  .bar {
+    display: inline;
+  }
+
+  .Navbar .logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar ul.menu.active {
+    align-items: center;
+    text-align: center;
+  }
+
+  .Navbar .logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 412px) {
+  .Navbar ul.menu.active {
+    text-align: center;
+  }
+
+  .bar {
+    right: 15px;
+    width: 25px;
+  }
+
+  .Navbar .logo {
+    font-size: 14px;
+  }
+}
